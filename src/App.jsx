@@ -1,12 +1,9 @@
 import './App.css';
+import { createBrowserRouter } from 'react-router-dom';
 
-function App() {
-
-  return (
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-  )
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <div>Hello world!</div>
+  }
+])
